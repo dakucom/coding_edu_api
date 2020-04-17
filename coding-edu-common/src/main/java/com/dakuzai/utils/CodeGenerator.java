@@ -23,7 +23,7 @@ public class CodeGenerator {
 
     public static void main(String[] args) {
 
-        // 模块名
+        // 模块名 需根据业务更改
         String moduleName = "edu";
 
         // 1、代码生成器
@@ -68,7 +68,7 @@ public class CodeGenerator {
          */
         PackageConfig pc = new PackageConfig();
         pc.setModuleName(moduleName);
-        pc.setParent("com.coding");
+        pc.setParent("com.dakuzai");
         pc.setController("controller");
         pc.setService("service");
         pc.setEntity("entity");

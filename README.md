@@ -16,3 +16,4 @@ coding-edu-edu 8110
 
 # 小提示
 1. TeacherQuery中入驻时间开始与结束定义为String类型的原因：前端传递的数据不需要类型转换
+2. 需要自行创建日志文件logback
