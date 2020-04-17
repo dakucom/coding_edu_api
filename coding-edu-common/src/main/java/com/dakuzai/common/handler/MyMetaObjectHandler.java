@@ -5,8 +5,12 @@ import org.apache.ibatis.reflection.MetaObject;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
-
-// MetaObjectHandler 元对象处理
+/**
+ * @program: coding_edu_api
+ * @description: MyMetaObjectHandler 元对象处理
+ * @author: dakuzai
+ * @create: 2020-04-15 00:46
+ */
 @Component
 public class MyMetaObjectHandler implements MetaObjectHandler {
 

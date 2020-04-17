@@ -17,8 +17,9 @@
     <dependencies>
         <!-- 依赖公共模块 -->
         <dependency>
-            <groupId>com.coding</groupId>
+            <groupId>com.dakuzai</groupId>
             <artifactId>coding-edu-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>

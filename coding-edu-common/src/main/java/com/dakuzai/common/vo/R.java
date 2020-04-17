@@ -1,36 +1,18 @@
 package com.dakuzai.common.vo;
-/**
- * .::::.
- * .::::::::.
- * :::::::::::    永无Bug、阿门
- * ..:::::::::::'
- * '::::::::::::'
- * .::::::::::
- * '::::::::::::::..
- * ..::::::::::::.
- * ``::::::::::::::::
- * ::::``:::::::::'        .:::.
- * ::::'   ':::::'       .::::::::.
- * .::::'      ::::     .:::::::'::::.
- * .:::'       :::::  .:::::::::' ':::::.
- * .::'        :::::.:::::::::'      ':::::.
- * .::'         ::::::::::::::'         ``::::.
- * ...:::           ::::::::::::'              ``::.
- * ```` ':.          ':::::::::'                  ::::..
- * '.:::::'                    ':'````..
- **/
+
 import com.dakuzai.common.constants.ResultCodeEnum;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiParam;
 import lombok.Data;
 
 import java.util.HashMap;
 import java.util.Map;
 /**
- *@program: coding_edu_api
- *@description: 无论什么接口，返回值永远是R！
- *@author: dakuzai
- *@create: 2020-04-08 17:12
+ * @program: coding_edu_api
+ * @description: 全局的统一返回结果
+ * @author: dakuzai
+ * @create: 2020-04-15 00:47
  */
 @Data
 @ApiModel(value = "全局的统一返回结果")
