@@ -30,7 +30,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
  *@author: dakuzai
  *@create: 2020-04-17 19:45
  */
-@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
+@SpringBootApplication
 public class AdminLoginApplication {
     public static void main(String[] args) {
         SpringApplication.run(AdminLoginApplication.class,args);

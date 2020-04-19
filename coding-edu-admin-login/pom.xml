@@ -15,8 +15,9 @@
     <dependencies>
         <!-- 依赖公共模块 -->
         <dependency>
-            <groupId>com.coding</groupId>
+            <groupId>com.dakuzai</groupId>
             <artifactId>coding-edu-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
@@ -63,6 +64,27 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
+
+        <!--spring security-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-security</artifactId>-->
+<!--        </dependency>-->
     </dependencies>
+
+    <!-- Maven的资源过滤！ -->
+    <build>
+        <resources>
+            <!-- 过滤src/main/java所有xml文件 -->
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <!-- 所有路径下的*.xml  -->
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
 
 </project>
