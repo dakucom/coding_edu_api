@@ -1,0 +1,10 @@
+# 端口号
+server:
+  port: 8130
+# 服务名
+spring:
+  application:
+    name: coding-aliyunoss
+  # 开发环境
+  profiles:
+    active: dev
