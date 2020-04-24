@@ -23,14 +23,11 @@ package com.dakuzai.controller;
 import com.dakuzai.common.vo.R;
 import com.dakuzai.service.FileService;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-
-import javax.ws.rs.POST;
 
 /**
  * @program: coding_edu_api

@@ -88,7 +88,7 @@ public class FileServiceImpl implements FileService {
             ossClient.shutdown();
 
             //获取上传后的文件地址
-            uploadUrl = "https://" + bucketName + "." + endpoint + filePath;
+            uploadUrl = "https://" + bucketName + "." + endpoint + "/" + fileUrl;
         } catch (IOException e) {
             e.printStackTrace();
         }

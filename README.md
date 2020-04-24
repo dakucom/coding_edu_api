@@ -1,7 +1,9 @@
+# 前端VUE
+https://github.com/dakucom/coding-web-admin
 # 端口号
-coding-edu-edu 8110
-coding-edu-admin-login 8120
-coding-edu-oss 8130
++ coding-edu-edu 8110
++ coding-edu-admin-login 8120
++ coding-edu-oss 8130
 
 # 版本
 + SpringBoot 2.2.5
