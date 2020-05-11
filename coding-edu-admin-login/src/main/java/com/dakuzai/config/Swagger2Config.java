@@ -16,7 +16,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class Swagger2Config {
 
     @Bean
-    public Docket webApiConfig(){
+    public Docket webApiConfig() {
         //过滤掉 admin 下的请求
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(webApiInfo())
@@ -26,7 +26,7 @@ public class Swagger2Config {
     }
 
 
-    private ApiInfo webApiInfo(){
+    private ApiInfo webApiInfo() {
 
         return new ApiInfoBuilder()
                 .title("后台系统登录注销服务")

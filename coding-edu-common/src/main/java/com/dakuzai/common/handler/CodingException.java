@@ -67,7 +67,7 @@ public class CodingException extends RuntimeException {
     @Override
     public String toString() {
         return "CodingException{" +
-                "message"+this.getMessage()+
+                "message" + this.getMessage() +
                 "code=" + code +
                 '}';
     }

@@ -1,4 +1,4 @@
-package com.dakuzai;
+package com.dakuzai.edu.vo;
 /**
  * .::::.
  * .::::::::.
@@ -20,19 +20,16 @@ package com.dakuzai;
  * '.:::::'                    ':'````..
  **/
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import lombok.Data;
 
 /**
- * @program: coding_edu_api
- * @description: Oss主启动类
- * @author: dakuzai
- * @create: 2020-04-22 19:58
+ *@program: coding_edu_api
+ *@description:
+ *@author: dakuzai
+ *@create: 2020-05-11 17:07
  */
-@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
-public class AliyunOssApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(AliyunOssApplication.class, args);
-    }
+@Data
+public class SubjectVo {
+    private String id;
+    private String title;
 }

@@ -16,7 +16,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class Swagger2Config {
 
     @Bean
-    public Docket webApiConfig(){
+    public Docket webApiConfig() {
         //过滤掉 admin 下的请求
         return new Docket(DocumentationType.SWAGGER_2)
                 .groupName("webApi")
@@ -28,7 +28,7 @@ public class Swagger2Config {
     }
 
     @Bean
-    public Docket adminApiConfig(){
+    public Docket adminApiConfig() {
         //只选取 /admin 下的请求
         return new Docket(DocumentationType.SWAGGER_2)
                 .groupName("adminApi")
@@ -38,7 +38,7 @@ public class Swagger2Config {
                 .build();
     }
 
-    private ApiInfo webApiInfo(){
+    private ApiInfo webApiInfo() {
 
         return new ApiInfoBuilder()
                 .title("网站-课程中心API文档")
@@ -48,7 +48,7 @@ public class Swagger2Config {
                 .build();
     }
 
-    private ApiInfo adminApiInfo(){
+    private ApiInfo adminApiInfo() {
 
         return new ApiInfoBuilder()
                 .title("后台管理系统-课程中心API文档")

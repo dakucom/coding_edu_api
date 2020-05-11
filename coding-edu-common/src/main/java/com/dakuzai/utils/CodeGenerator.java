@@ -13,6 +13,7 @@ import com.baomidou.mybatisplus.generator.config.rules.DateType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 
 import java.util.ArrayList;
+
 /**
  * @program: coding_edu_api
  * @description: 自动生成代码
@@ -55,7 +56,7 @@ public class CodeGenerator {
          * 数据源配置
          */
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://localhost:3306/coding_"+moduleName+"?characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8");
+        dsc.setUrl("jdbc:mysql://localhost:3306/coding_" + moduleName + "?characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("root");
@@ -81,11 +82,11 @@ public class CodeGenerator {
         StrategyConfig strategy = new StrategyConfig();
         // 要生成哪一个表对应的类
         // ！！！所有edu 开头的表都自动生成！
-        strategy.setInclude(moduleName+"_\\w*");
+        strategy.setInclude(moduleName + "_\\w*");
         // 数据库表生成到实体类的策略
         strategy.setNaming(NamingStrategy.underline_to_camel);
         // edu_ 这个前缀不生成在类中
-        strategy.setTablePrefix(pc.getModuleName()+"_");
+        strategy.setTablePrefix(pc.getModuleName() + "_");
         //表的列规则：下划线转驼峰
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
         // 自动生成lombok注解

@@ -38,7 +38,7 @@ public class MPconfig {
 
     // SQL执行效率插件
     @Bean
-    @Profile({"dev","test"})// 设置 dev test 环境开启
+    @Profile({"dev", "test"})// 设置 dev test 环境开启
     public PerformanceInterceptor performanceInterceptor() {
         PerformanceInterceptor performanceInterceptor = new PerformanceInterceptor();
         // 允许执行的sql的最长时间 ， 默认的单位是ms

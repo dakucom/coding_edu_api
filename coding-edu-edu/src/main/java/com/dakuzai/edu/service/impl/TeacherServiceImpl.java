@@ -29,8 +29,8 @@ public class TeacherServiceImpl extends ServiceImpl<TeacherMapper, Teacher> impl
         QueryWrapper<Teacher> queryWrapper = new QueryWrapper<>();
         queryWrapper.orderByAsc("sort");
 
-        if (teacherQuery==null){
-            baseMapper.selectPage(pageParam,queryWrapper);
+        if (teacherQuery == null) {
+            baseMapper.selectPage(pageParam, queryWrapper);
             return;
         }
 
@@ -39,22 +39,22 @@ public class TeacherServiceImpl extends ServiceImpl<TeacherMapper, Teacher> impl
         String begin = teacherQuery.getBegin();
         String end = teacherQuery.getEnd();
 
-        if (!StringUtils.isEmpty(name)){
-            queryWrapper.like("name",name);
+        if (!StringUtils.isEmpty(name)) {
+            queryWrapper.like("name", name);
         }
-        if (!StringUtils.isEmpty(level)){
-            queryWrapper.eq("level",level);
-        }
-
-        if (!StringUtils.isEmpty(begin)){
-            queryWrapper.ge("gmt_create",begin);
+        if (!StringUtils.isEmpty(level)) {
+            queryWrapper.eq("level", level);
         }
 
-        if (!StringUtils.isEmpty(end)){
-            queryWrapper.le("gmt_create",end);
+        if (!StringUtils.isEmpty(begin)) {
+            queryWrapper.ge("gmt_create", begin);
         }
 
-        baseMapper.selectPage(pageParam,queryWrapper);
+        if (!StringUtils.isEmpty(end)) {
+            queryWrapper.le("gmt_create", end);
+        }
+
+        baseMapper.selectPage(pageParam, queryWrapper);
 
     }
 }

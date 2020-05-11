@@ -6,7 +6,7 @@ import lombok.Data;
 
 import java.io.Serializable;
 
-@ApiModel(value = "Teacher查询对象",description = "讲师查询对象封装")
+@ApiModel(value = "Teacher查询对象", description = "讲师查询对象封装")
 @Data
 public class TeacherQuery implements Serializable {
 

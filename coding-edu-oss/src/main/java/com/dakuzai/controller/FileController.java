@@ -46,7 +46,7 @@ public class FileController {
     @ApiOperation(value = "文件上传")
     @PostMapping("upload")
     public R upload(
-            @ApiParam(name = "file",value = "文件",required = true)
+            @ApiParam(name = "file", value = "文件", required = true)
             @RequestParam MultipartFile file) {
         String uploadUrl = fileService.uploadAliyun(file);
         return R.ok().message("文件上传成功").data("url", uploadUrl);

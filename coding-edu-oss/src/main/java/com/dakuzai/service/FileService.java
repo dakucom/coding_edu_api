@@ -23,10 +23,10 @@ package com.dakuzai.service;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
- *@program: coding_edu_api
- *@description: 文件业务
- *@author: dakuzai
- *@create: 2020-04-23 11:31
+ * @program: coding_edu_api
+ * @description: 文件业务
+ * @author: dakuzai
+ * @create: 2020-04-23 11:31
  */
 
 public interface FileService {
