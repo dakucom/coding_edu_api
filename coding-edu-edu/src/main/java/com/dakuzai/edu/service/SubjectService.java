@@ -12,7 +12,7 @@ import java.util.List;
  * 课程科目 服务类
  * </p>
  *
- * @author Coding
+ * @author dakuzai
  * @since 2020-04-05
  */
 public interface SubjectService extends IService<Subject> {

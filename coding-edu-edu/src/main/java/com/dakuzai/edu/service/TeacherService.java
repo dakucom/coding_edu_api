@@ -10,7 +10,7 @@ import com.dakuzai.edu.dto.TeacherQuery;
  * 讲师 服务类
  * </p>
  *
- * @author Coding
+ * @author dakuzai
  * @since 2020-04-05
  */
 public interface TeacherService extends IService<Teacher> {

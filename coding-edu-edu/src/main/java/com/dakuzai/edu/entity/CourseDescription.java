@@ -23,7 +23,7 @@ import lombok.experimental.Accessors;
  * 课程简介
  * </p>
  *
- * @author Coding
+ * @author dakuzai
  * @since 2020-04-05
  */
 @Data
@@ -34,9 +34,9 @@ import lombok.experimental.Accessors;
 public class CourseDescription implements Serializable {
 
     private static final long serialVersionUID = 1L;
-
+    //课程描述对应的id策略，是默认生成的，应该为回填之后手动输入
     @ApiModelProperty(value = "课程ID")
-    @TableId(value = "id", type = IdType.ID_WORKER_STR)
+    @TableId(value = "id", type = IdType.INPUT)
     private String id;
 
     @ApiModelProperty(value = "课程简介")

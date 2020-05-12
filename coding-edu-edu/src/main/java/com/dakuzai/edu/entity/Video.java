@@ -23,7 +23,7 @@ import lombok.experimental.Accessors;
  * 课程视频
  * </p>
  *
- * @author Coding
+ * @author dakuzai
  * @since 2020-04-05
  */
 @Data

@@ -3,13 +3,14 @@ package com.dakuzai.edu.mapper;
 import com.dakuzai.edu.entity.Subject;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 /**
  * <p>
  * 课程科目 Mapper 接口
  * </p>
  *
- * @author Coding
+ * @author dakuzai
  * @since 2020-04-05
  */
 @Mapper
